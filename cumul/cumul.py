@@ -69,7 +69,7 @@ class Jeu2048:
       self.board[i][j] = 2 if random.random() < 0.9 else 4
 
   def move(self, direction):
-    if self.partie_finieor self.won:
+    if self.partie_finie or self.won:
       return
 
     if direction == "left":
